@@ -30,6 +30,7 @@ jobs:
         id: build-and-push
         uses: guan840912/ecr-public-action@1ae8c9a
         with:
+          create-repo: "true"
           tags: |
             public.ecr.aws/w4j7f3u2/${{ steps.repoName.outputs.reponame }}:latest
             public.ecr.aws/w4j7f3u2/${{ steps.repoName.outputs.reponame }}:${{ steps.sha.outputs.sha7 }}
