@@ -28,7 +28,7 @@ jobs:
           aws-region: us-east-1
       - name: Build and Push to ECR public
         id: build-and-push
-        uses: guan840912/ecr-public-action@578d422
+        uses: guan840912/ecr-public-action@e0b5dd5c39cebbf3ccddcb87ea5f6476954ed3fc
         with:
           create_repo: bar
           tags: |
